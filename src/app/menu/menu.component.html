@@ -1,0 +1,8 @@
+<h2>{{ restaurant_name }}</h2>
+<hr>
+
+<ul class="list-unstyled">
+	<li *ngFor="let item of menu_items">
+		<a href="#" (click)="onSelect(item)">{{ item.name }}</a>
+	</li>
+</ul>
